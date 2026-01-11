@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="hero-content">
         <h1>Daniel Flynn</h1>
         <p className="hero-subtitle">
-          Software engineer.
+          Hardware & Software Engineer
         </p>
       </div>
     </section>
