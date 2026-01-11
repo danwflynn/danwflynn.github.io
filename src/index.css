@@ -1,5 +1,9 @@
 /* ---------- CSS Reset (minimal) ---------- */
 
+html {
+  overflow-y: scroll; /* always show vertical scrollbar */
+}
+
 *,
 *::before,
 *::after {
@@ -124,19 +128,39 @@ li {
   color: var(--muted);
 }
 
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* spacing between tabs */
+}
+
 .site-nav button {
+  position: relative;
   background: none;
   border: none;
   font: inherit;
   cursor: pointer;
-  padding: 0 0.5rem;
+  padding: 0.5rem 0; /* vertical padding only */
+  font-weight: 500; /* same for all tabs */
+  min-width: 70px; /* optional: ensures all tabs roughly same width */
+  text-align: center;
 }
 
-.site-nav button.active-tab {
-  font-weight: bold;
-  text-decoration: underline;
+/* underline using pseudo-element — no layout shift */
+.site-nav button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: currentColor;
+  transition: width 0.2s ease;
 }
 
+.site-nav button.active-tab::after {
+  width: 100%;
+}
 
 /* ---------- Footer ---------- */
 
