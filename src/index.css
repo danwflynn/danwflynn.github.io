@@ -124,6 +124,20 @@ li {
   color: var(--muted);
 }
 
+.site-nav button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+.site-nav button.active-tab {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
 /* ---------- Footer ---------- */
 
 .site-footer {

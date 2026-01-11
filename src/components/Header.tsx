@@ -1,12 +1,23 @@
-export default function Header() {
+interface HeaderProps {
+  selectedTab: string
+  onSelectTab: (tab: string) => void
+}
+
+export default function Header({ selectedTab, onSelectTab }: HeaderProps) {
+  const tabs = ['hero', 'projects', 'about', 'contact']
+
   return (
     <header className="site-header">
       <nav className="site-nav">
-        <a href="#projects">Projects</a>
-        <span className="nav-separator">·</span>
-        <a href="#about">About</a>
-        <span className="nav-separator">·</span>
-        <a href="#contact">Contact</a>
+        {tabs.map((tab) => (
+          <button
+            key={tab}
+            className={selectedTab === tab ? 'active-tab' : ''}
+            onClick={() => onSelectTab(tab)}
+          >
+            {tab.charAt(0).toUpperCase() + tab.slice(1)}
+          </button>
+        ))}
       </nav>
     </header>
   )
