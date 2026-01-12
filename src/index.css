@@ -19,11 +19,12 @@ body {
 /* ---------- Global Theme ---------- */
 
 :root {
-  --bg: #ffffff;
-  --text: #111111;
-  --muted: #555555;
-  --border: #eaeaea;
-  --link: #0066cc;
+  --bg: #6c9d97;
+  --text: #e2fce6;
+  --muted: #cee7d2;
+  --border: #537672ad;
+  --link: #3247ff;
+  --link-bg: rgba(50, 71, 255, 0.2);
 
   --max-width: 900px;
   --section-padding: 5rem;
@@ -72,10 +73,23 @@ p {
 a {
   color: var(--link);
   text-decoration: none;
+
+  padding: 0.15em 0.35em;
+  border-radius: 6px;
+
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
 }
 
-a:hover {
-  text-decoration: underline;
+
+a:hover,
+a:focus-visible {
+  background-color: var(--link-bg);
+}
+
+a:active {
+  background-color: rgba(50, 71, 255, 0.35);
 }
 
 /* ---------- Lists ---------- */
@@ -107,7 +121,7 @@ li {
   z-index: 100;
 
   background-color: var(--bg);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 5px solid var(--border);
 }
 
 .site-nav {
@@ -144,6 +158,7 @@ li {
   font-weight: 500; /* same for all tabs */
   min-width: 70px; /* optional: ensures all tabs roughly same width */
   text-align: center;
+  color: var(--text);
 }
 
 /* underline using pseudo-element — no layout shift */
@@ -165,7 +180,7 @@ li {
 /* ---------- Footer ---------- */
 
 .site-footer {
-  border-top: 1px solid var(--border);
+  border-top: 5px solid var(--border);
   padding: 2rem 1.5rem;
   margin-top: 4rem;
 
@@ -188,7 +203,7 @@ li {
 /* ---------- Home ---------- */
 
 .home {
-  min-height: 80vh;
+  min-height: 64vh;
   display: flex;
   align-items: center;
 }
@@ -229,4 +244,10 @@ li {
 
 .project-link {
   font-size: 0.95rem;
+}
+
+/* ---------- Section ---------- */
+
+.section {
+  min-height: 64vh;
 }
