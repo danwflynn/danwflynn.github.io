@@ -4,7 +4,7 @@ interface HeaderProps {
 }
 
 export default function Header({ selectedTab, onSelectTab }: HeaderProps) {
-  const tabs = ['hero', 'projects', 'about', 'contact']
+  const tabs = ['home', 'projects', 'about', 'contact']
 
   return (
     <header className="site-header">

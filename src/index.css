@@ -185,21 +185,21 @@ li {
   color: var(--muted);
 }
 
-/* ---------- Hero ---------- */
+/* ---------- Home ---------- */
 
-.hero {
+.home {
   min-height: 80vh;
   display: flex;
   align-items: center;
 }
 
-.hero-content {
+.home-content {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-.hero-subtitle {
+.home-subtitle {
   font-size: 1.2rem;
   max-width: 600px;
 }
