@@ -1,29 +1,37 @@
 import Section from '../components/Section'
+import GitHubIcon from '../components/icons/GitHubIcon'
+import LinkedInIcon from '../components/icons/LinkedInIcon'
+import EmailIcon from '../components/icons/EmailIcon'
 
 export default function Contact() {
   return (
     <Section id="contact" title="Contact">
-      <p>
-        <a href="mailto:danielwflynn@icloud.com">danielwflynn@icloud.com</a>
-      </p>
-      <p>
+      <div className="contact-icons">
         <a
           href="https://github.com/danwflynn"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub"
         >
-          GitHub
+          <GitHubIcon />
         </a>
-      </p>
-      <p>
+
+        <a
+          href="mailto:danielwflynn@icloud.com"
+          aria-label="Email"
+        >
+          <EmailIcon />
+        </a>
+
         <a
           href="https://www.linkedin.com/in/daniel-flynn-w513/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
-          LinkedIn
+          <LinkedInIcon />
         </a>
-      </p>
+      </div>
     </Section>
   )
 }

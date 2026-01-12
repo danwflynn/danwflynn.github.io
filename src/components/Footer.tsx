@@ -11,8 +11,16 @@ export default function Footer() {
           GitHub
         </a>
         <span className="footer-separator">·</span>
-        <a href="mailto:you@email.com">
+        <a href="mailto:danielwflynn@icloud.com">
           Email
+        </a>
+        <span className="footer-separator">·</span>
+        <a
+          href="https://www.linkedin.com/in/daniel-flynn-w513/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
         </a>
       </p>
     </footer>
