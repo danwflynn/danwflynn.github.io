@@ -12,6 +12,15 @@ const projects = [
     skills: ['Computer Architecture', 'Hardware Simulation', 'Verilog', 'ARM', 'MIPS', 'Assembly', 'Python', 'Graphviz', 'Search Algorithms', 'Compilers'],
   },
   {
+    name: 'The Cool Bike Video Game and Engine',
+    description: 'Bike racing video game in C++ by creating a 3d graphics engine and physics engine for it. \
+    OpenGL rendering pipeline using models, meshes, shaders, and glm linear algebra for camera transformations. \
+    Implemented collision and gravity physics using hitbox vectors generated from glb 3d models and quaternions for rotations. \
+    Wrote unit tests for transform logic, camera positioning, and hitbox detection using C++ gtest library for validation.',
+    link: 'https://github.com/danwflynn/The-Cool-Bike',
+    skills: ['C++', 'CMAKE', 'OpenGL', 'Computer Graphics', 'gtest', 'Blender', 'Shaders', 'Python'],
+  },
+  {
     name: 'Interactive System for Electronic Creativity',
     description: 'Interactive drawing system using an ESP32-based remote over BLE and C/OpenGL graphics software. \
     Remote tracking via Raspberry Pi camera, laser pointer, and Python OpenCV. Communication between components done over MQTT. \
