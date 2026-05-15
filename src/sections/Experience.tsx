@@ -4,40 +4,6 @@ export default function Experience() {
   return (
     <Section id="experience" title="Experience">
       <div className="timeline">
-
-        <div className="timeline-item">
-          <div className="timeline-logo">
-            <img src="/logos/digitize-logo.png" alt="Digitize logo" />
-          </div>
-
-          <div className="timeline-content">
-            <h3>Digitize</h3>
-            <span className="timeline-date">
-              Embedded Software Engineer • April 2026 - Present
-            </span>
-            <ul>
-              <li>
-                Implemented firmware to control hardware peripherals for RTU microcontrollers in C and assembly for 8051 architecture.
-              </li>
-              <li>
-                Wrote custom bit-banged I2C, SPI, and UART drivers for inter-device communication and tested with Saleae logic analyzer.
-              </li>
-              <li>
-                Created an integrated circuit for an RTU with an STC89 MCU, WIZnet W5500 ethernet controller, PCF8574 I/O extender, and AHT21 temperature sensor enabling temperature measurements, TCP/UDP communication, and a serial interface.
-              </li>
-              <li>
-                Soldered components for a PCB integrating the integrated circuit and an 8 relay module for turning switches on and off.
-              </li>
-              <li>
-                Developed a Python Qt GUI for controlling the RTU circuit and gathering data via TCP and UDP socket communication.
-              </li>
-              <li>
-                Leveraged OpenSCAD 3d modeling software and Prusa Slicer to 3d print casing and PCB standoffs for RTU circuit board.
-              </li>
-            </ul>
-          </div>
-        </div>
-
         <div className="timeline-item">
           <div className="timeline-logo">
             <img src="/logos/nklabs-logo.png" alt="NK Labs logo" />
