@@ -12,6 +12,15 @@ const projects = [
     skills: ['Computer Architecture', 'Hardware Simulation', 'Verilog', 'ARM', 'MIPS', 'Assembly', 'Python', 'Graphviz', 'Search Algorithms', 'Compilers'],
   },
   {
+    name: 'Embedded Environmental Monitoring and Control System',
+    description: 'Integrated circuit that uses an 8 relay module, AHT21, PCF8574, STC89, and W5500 to control heaters and humidifiers. \
+    MCU firmware that takes sensor measurements, sends UDP data, receives TCP settings, and saves settings to EEPROM. \
+    Qt app that allows users to view measurement data and configure temperature/humidity thresholds for turning on relays. \
+    Bit banged I2C and SPI drivers written in assembly for 8051 architecture. Firmware written in C with SDCC 8051 header.',
+    link: 'https://github.com/danwflynn/relay-controller',
+    skills: ['C', 'Python', 'Qt', '8051', 'W5500', 'Assembly', 'I2C', 'SPI', 'Embedded Systems', 'Integrated Circuit', 'PCB', 'EEPROM', 'Networks', 'TCP', 'UDP'],
+  },
+  {
     name: 'The Cool Bike Video Game and Engine',
     description: 'Bike racing video game in C++ by creating a 3d graphics engine and physics engine for it. \
     OpenGL rendering pipeline using models, meshes, shaders, and glm linear algebra for camera transformations. \

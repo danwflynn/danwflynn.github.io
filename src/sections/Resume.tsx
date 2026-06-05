@@ -5,7 +5,7 @@ export default function Resume() {
     <Section id="resume" title="Resume">
       <div className="resume-wrapper">
         <iframe
-          src="df_resume.pdf"
+          src="dwf_res.pdf"
           title="Daniel Flynn Resume"
           className="resume-pdf"
         />
